@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets - Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+<body>
+<header>
+    <div class="boxed">
+        <div class="flex align-center space-between">
+            <!-- Bouton mobile -->
+            <button onclick="openMenu()" class="header-menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Menu principal à gauche -->
+            <ul class="header-menu">
+                <li><a href="index.html" class="lang" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="lang" data-lang-fr="À-propos" data-lang-en="About">À-propos</a></li>
+                <li><a href="projects.html" class="lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</a></li>
+                <li><a href="contact.html" class="lang" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+
+            <!-- Boutons de langue à droite -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('fr')">FR</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section light">
+    <div class="boxed text-center">
+        <h1 class="main-title lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</h1>
+
+        <div class="projects-container">
+
+            <!-- Projet 1 -->
+            <div class="project-card">
+                <img src="img/openaig.jpeg" alt="Reinforcement Learning">
+                <h3 class="lang" data-lang-fr="Apprentissage par renforcement" data-lang-en="Reinforcement Learning">Apprentissage par renforcement</h3>
+                <p class="lang"
+                   data-lang-fr="Exploration et application de l'apprentissage par renforcement profond pour développer des systèmes robotiques autonomes et optimisés. Ce projet inclut l'implémentation du Deep Q-Learning et de ses variantes pour la prise de décision et la navigation dans des environnements simulés comme OpenAI Gym, en utilisant des algorithmes avancés pour améliorer la stabilité et la performance des agents intelligents."
+                   data-lang-en="Exploration and application of deep reinforcement learning to develop autonomous and optimized robotic systems. This project includes the implementation of Deep Q-Learning and its variants for decision-making and navigation in simulated environments such as OpenAI Gym, using advanced algorithms to improve stability and performance of intelligent agents.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Apprentissage par renforcement profond, Q-Learning, Python, OpenAI Gym, Simulation"
+                          data-lang-en="Deep Reinforcement Learning, Q-Learning, Python, OpenAI Gym, Simulation">
+                         Apprentissage par renforcement profond, Q-Learning, Python, OpenAI Gym, Simulation
+                   </span>
+                </p>
+                <a href="docs/CR_DIMU.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">Télécharger le rapport</a>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <img src="img/opencv.jpeg" alt="Image Analysis with OpenCV">
+                <h3 class="lang" data-lang-fr="Analyse d'Images avec OpenCV" data-lang-en="Image Analysis with OpenCV">Analyse d'Images avec OpenCV</h3>
+                <p class="lang"
+                   data-lang-fr="Développement d'une solution de comptage de bonbons et d'indice de végétation avec OpenCV pour l'analyse d'images."
+                   data-lang-en="Development of a solution for candy counting and vegetation index computation using OpenCV for image analysis.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Python, OpenCV, traitement d'images"
+                          data-lang-en="Python, OpenCV, Image Processing">
+                         Python, OpenCV, traitement d'images
+                   </span>
+                </p>
+                <a href="docs/CR_CAVIC.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">Télécharger le rapport</a>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <img src="img/nvidia.jpeg" alt="Robotic Arm Trajectory Development">
+                <h3 class="lang" data-lang-fr="Stage de Recherche : Développement de Trajectoires pour Bras Robotisé" data-lang-en="Research Internship: Robotic Arm Trajectory Development">Stage de Recherche : Développement de Trajectoires pour Bras Robotisé</h3>
+                <p class="lang"
+                   data-lang-fr="Intégration d'Isaac Sim et cuRobo pour la génération de trajectoires en environnement simulé."
+                   data-lang-en="Integration of Isaac Sim and cuRobo for trajectory generation in a simulated environment.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="ROS, Isaac Sim, cuRobo, Python, Docker"
+                          data-lang-en="ROS, Isaac Sim, cuRobo, Python, Docker">
+                         ROS, Isaac Sim, cuRobo, Python, Docker
+                   </span>
+                </p>
+                <a href="docs/2A_Carpentier_Lucas_Sysmer.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">Télécharger le rapport</a>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <img src="img/rl.jpeg" alt="Technological Convergence">
+                <h3 class="lang" data-lang-fr="Convergence Technologique - L'intégration de l'IA dans la Robotique" data-lang-en="Technological Convergence - AI Integration in Robotics">Convergence Technologique - L'intégration de l'IA dans la Robotique</h3>
+                <p class="lang"
+                   data-lang-fr="Exploration de l'intégration de l'IA dans la robotique, mettant en lumière les transformations majeures apportées par l'IA dans le développement de robots autonomes et intelligents, avec des applications dans la santé, l'industrie et l'exploration spatiale."
+                   data-lang-en="Exploration of AI integration in robotics, highlighting major transformations brought by AI in the development of autonomous and intelligent robots, with applications in healthcare, industry, and space exploration.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Intelligence Artificielle, Apprentissage Automatique, Robotique, Systèmes autonomes"
+                          data-lang-en="Artificial Intelligence, Machine Learning, Robotics, Autonomous Systems">
+                         Intelligence Artificielle, Apprentissage Automatique, Robotique, Systèmes autonomes
+                   </span>
+                </p>
+                <a href="docs/CR_RSM.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">Télécharger le rapport</a>
+            </div>
+
+            <div class="project-card">
+                <img src="img/scipy.jpeg" alt="Bird Leg Locomotion Modeling">
+                <h3 class="lang" data-lang-fr="Modélisation de la Locomotion d'une Patte d'Oiseau" data-lang-en="Bird Leg Locomotion Modeling">
+                    Modélisation de la Locomotion d'une Patte d'Oiseau
+                </h3>
+                <p class="lang"
+                   data-lang-fr="Utilisation de la cinématique inverse et des algorithmes d'optimisation pour modéliser la locomotion des oiseaux."
+                   data-lang-en="Using inverse kinematics and optimization algorithms to model bird locomotion.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Python, Cinématique inverse, Optimisation"
+                          data-lang-en="Python, Inverse Kinematics, Optimization">
+                 Python, Cinématique inverse, Optimisation
+           </span>
+                </p>
+                <a href="docs/CR_HUGEL.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">
+                    Télécharger le rapport
+                </a>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card">
+                <img src="img/matlab.jpeg" alt="Dynamic Vehicle Simulation">
+                <h3 class="lang" data-lang-fr="Simulation Dynamique de Véhicule Routier" data-lang-en="Dynamic Vehicle Simulation">
+                    Simulation Dynamique de Véhicule Routier
+                </h3>
+                <p class="lang"
+                   data-lang-fr="Développement d'une simulation dynamique et cinématique d'un véhicule routier en utilisant MATLAB. Ce projet comprend la modélisation des comportements du véhicule en intégrant les effets de lacet, les angles de dérive, et la trajectoire, tout en prenant en compte des scénarios comme le virage à vitesse constante, le freinage brusque et l'évitement d'obstacles. Une interface graphique a été réalisée avec MATLAB App Designer pour faciliter l'utilisation de la simulation."
+                   data-lang-en="Development of a dynamic and kinematic simulation of a road vehicle using MATLAB. This project includes modeling vehicle behaviors by integrating yaw effects, slip angles, and trajectories, while considering scenarios such as constant-speed turning, sudden braking, and obstacle avoidance. A graphical interface was created with MATLAB App Designer for easy use of the simulation.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Modélisation cinématique et dynamique, MATLAB, App Designer, Simulation de scénarios de conduite."
+                          data-lang-en="Kinematic and Dynamic Modeling, MATLAB, App Designer, Driving Scenario Simulation.">
+                 Modélisation cinématique et dynamique, MATLAB, App Designer, Simulation de scénarios de conduite.
+           </span>
+                </p>
+                <a href="docs/CR_RoboTerre_DYN.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">
+                    Télécharger le rapport
+                </a>
+            </div>
+
+            <!-- Projet 3 -->
+            <div class="project-card">
+                <img src="img/gies.jpeg" alt="Robot Supervision and Control in C#">
+                <h3 class="lang" data-lang-fr="Pilotage et Supervision d'un Robot en C#" data-lang-en="Robot Supervision and Control in C#">
+                    Pilotage et Supervision d'un Robot en C#
+                </h3>
+                <p class="lang"
+                   data-lang-fr="Ce projet consiste en la création d'une interface de supervision pour le contrôle en temps réel d'un robot mobile via une liaison série. À travers une interface en C# et WPF, le projet permet l'envoi et la réception de commandes pour le pilotage du robot, en assurant une communication fiable grâce à des buffers circulaires et un protocole de communication personnalisé. Le système de supervision affiche des données en temps réel telles que les distances télémétriques et l'état du robot."
+                   data-lang-en="This project involves creating a supervision interface for real-time control of a mobile robot via serial communication. Through a C# and WPF interface, the project enables sending and receiving commands to control the robot, ensuring reliable communication using circular buffers and a custom communication protocol. The supervision system displays real-time data such as telemetry distances and robot status.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Programmation orientée objet en C#, WPF, Communication série, Protocoles de communication, Systèmes embarqués"
+                          data-lang-en="Object-Oriented Programming in C#, WPF, Serial Communication, Communication Protocols, Embedded Systems">
+                 Programmation orientée objet en C#, WPF, Communication série, Protocoles de communication, Systèmes embarqués
+           </span>
+                </p>
+                <a href="docs/CR_GIES.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">
+                    Télécharger le rapport
+                </a>
+            </div>
+
+            <!-- Projet 4 -->
+            <div class="project-card">
+                <img src="img/dle.jpeg" alt="Introduction aux Réseaux de Neurones">
+                <h3 class="lang" data-lang-fr="Introduction aux Réseaux de Neurones" data-lang-en="Introduction to Neural Networks">
+                    Introduction aux Réseaux de Neurones
+                </h3>
+                <p class="lang"
+                   data-lang-fr="Ce projet consistait en une présentation orale détaillée sur les réseaux de neurones artificiels. J'ai expliqué les concepts fondamentaux comme l'inspiration biologique des neurones, l'architecture des perceptrons multicouches, les fonctions d'activation, et l'algorithme de rétropropagation pour l'entraînement des modèles."
+                   data-lang-en="This project was a detailed oral presentation about artificial neural networks. I explained fundamental concepts such as the biological inspiration of neurons, the architecture of multi-layer perceptrons, activation functions, and the backpropagation algorithm for training models.">
+                    Ce projet consistait en une présentation orale détaillée sur les réseaux de neurones artificiels. J'ai expliqué les concepts fondamentaux comme l'inspiration biologique des neurones, l'architecture des perceptrons multicouches, les fonctions d'activation, et l'algorithme de rétropropagation pour l'entraînement des modèles.
+                </p>
+                <p class="lang"
+                   data-lang-fr="La présentation abordait également les optimisations modernes comme la descente de gradient, les problèmes de vanishing/exploding gradient, et les techniques de régularisation (L1, L2, Dropout)."
+                   data-lang-en="The presentation also covered modern optimizations like gradient descent, the vanishing/exploding gradient problems, and regularization techniques (L1, L2, Dropout).">
+                    La présentation abordait également les optimisations modernes comme la descente de gradient, les problèmes de vanishing/exploding gradient, et les techniques de régularisation (L1, L2, Dropout).
+                </p>
+
+                <a href="docs/courseDL.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le document" data-lang-en="Download the Document">
+                    Télécharger le document
+                </a>
+            </div>
+
+
+            <!-- Projet 5 -->
+            <div class="project-card">
+                <img src="img/fortran.jpeg" alt="Finite Difference Method Introduction">
+                <h3 class="lang" data-lang-fr="Introduction à la Méthode des Différences Finies" data-lang-en="Introduction to Finite Difference Method">
+                    Introduction à la Méthode des Différences Finies
+                </h3>
+                <p class="lang"
+                   data-lang-fr="Étude de la méthode des différences finies pour résoudre des équations différentielles, en particulier appliquée à l'équation de transport. Ce projet inclut la discrétisation de l’espace en une grille de points et l’utilisation de langages de programmation comme Fortran pour obtenir des solutions numériques. L'analyse explore les limites de cette méthode, telles que les erreurs d'arrondi et la sensibilité aux conditions aux limites."
+                   data-lang-en="Study of the finite difference method to solve differential equations, particularly applied to the transport equation. This project includes discretizing space into a grid of points and using programming languages such as Fortran to obtain numerical solutions. The analysis explores the limits of this method, such as rounding errors and sensitivity to boundary conditions.">
+                </p>
+                <p><strong class="lang" data-lang-fr="Compétences :" data-lang-en="Skills:">Compétences :</strong>
+                    <span class="lang"
+                          data-lang-fr="Méthode des différences finies, résolution numérique, Fortran, équations différentielles"
+                          data-lang-en="Finite Difference Method, Numerical Resolution, Fortran, Differential Equations">
+                 Méthode des différences finies, résolution numérique, Fortran, équations différentielles
+           </span>
+                </p>
+                <a href="docs/CR_TP_Final.pdf" class="btn-download lang"
+                   data-lang-fr="Télécharger le rapport" data-lang-en="Download Report">
+                    Télécharger le rapport
+                </a>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="copyright text-center">
+    <p class="lang" data-lang-fr="&copy; 2024 Lucas Carpentier. Tous droits réservés."
+       data-lang-en="&copy; 2024 Lucas Carpentier. All rights reserved.">
+        &copy; 2024 Lucas Carpentier. Tous droits réservés.
+    </p>
+</div>
+
+<script src="javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À propos - Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="boxed">
+        <div class="flex align-center space-between">
+            <!-- Bouton mobile -->
+            <button onclick="openMenu()" class="header-menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Menu principal à gauche -->
+            <ul class="header-menu">
+                <li><a href="index.html" class="lang" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="lang" data-lang-fr="À-propos" data-lang-en="About">À-propos</a></li>
+                <li><a href="projects.html" class="lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</a></li>
+                <li><a href="contact.html" class="lang" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+
+            <!-- Boutons de langue à droite -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('fr')">FR</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section light">
+
+    <div class="boxed education-section">
+        <h2 class="lang text-center" data-lang-fr="Mon parcours scolaire" data-lang-en="My Academic Journey">
+            Mon parcours scolaire
+        </h2>
+
+        <!-- Classe Préparatoire -->
+        <div class="education-content">
+            <h3 class="lang" data-lang-fr="Classe Préparatoire aux Grandes Écoles (PCSI/PC)" data-lang-en="Preparatory Class for Engineering Schools (PCSI/PC)">
+                Classe Préparatoire aux Grandes Écoles (PTSI/PT)
+            </h3>
+            <p class="lang" data-lang-fr="<em>Lycée Faidherbe, Lille (2020 - 2022)</em>" data-lang-en="<em>Faidherbe High School, Lille (2020 - 2022)</em>">
+                Lycée Faidherbe, Lille (2020 - 2022)
+            </p>
+            <p class="lang" data-lang-fr="Pendant ces deux années exigeantes, j'ai approfondi mes connaissances en physique classique, mécanique, électromagnétisme et optique. J'ai également acquis de solides bases en mathématiques, notamment en analyse et algèbre linéaire. Ces apprentissages m'ont permis de mieux comprendre les systèmes physiques et leurs modélisations mathématiques."
+               data-lang-en="During these demanding two years, I deepened my knowledge in classical physics, mechanics, electromagnetism, and optics. I also gained a solid foundation in mathematics, particularly in analysis and linear algebra. These skills allowed me to better understand physical systems and their mathematical modeling.">
+                Pendant ces deux années exigeantes, j'ai approfondi mes connaissances en physique classique, mécanique, électromagnétisme et optique. J'ai également acquis de solides bases en mathématiques, notamment en analyse et algèbre linéaire. Ces apprentissages m'ont permis de mieux comprendre les systèmes physiques et leurs modélisations mathématiques.
+            </p>
+            <p class="lang" data-lang-fr="J'ai également participé à un projet Santé et Prévention où j'ai mesuré et analysé le flux sanguin à l'aide de capteurs pour détecter des maladies du sang. Ce projet m'a permis de développer mes compétences en analyse de données et en résolution de problèmes complexes dans un contexte médical."
+               data-lang-en="I also participated in a Health and Prevention project where I measured and analyzed blood flow using sensors to detect blood diseases. This project allowed me to develop my skills in data analysis and solving complex problems in a medical context.">
+                J'ai également participé à un projet Santé et Prévention où j'ai mesuré et analysé le flux sanguin à l'aide de capteurs pour détecter des maladies du sang. Ce projet m'a permis de développer mes compétences en analyse de données et en résolution de problèmes complexes dans un contexte médical.
+            </p>
+        </div>
+
+
+
+
+        <!-- Diplôme d'ingénieur -->
+        <div class="education-content">
+            <h3 class="lang" data-lang-fr="Diplôme d'ingénieur - SeaTech Toulon" data-lang-en="Engineering Degree - SeaTech Toulon">
+                Diplôme d'ingénieur - SeaTech Toulon
+            </h3>
+            <p class="lang" data-lang-fr="<em>SeaTech Toulon (2022 - Présent)</em>" data-lang-en="<em>SeaTech Toulon (2022 - Present)</em>">
+                SeaTech Toulon (2022 - Présent)
+            </p>
+            <p class="lang" data-lang-fr="Au cours de mon diplôme d'ingénieur, j'ai acquis des compétences avancées en cinématique des robots, en actionneurs et capteurs, ainsi qu'en commandes linéaires et non-linéaires. Ces cours m'ont permis de maîtriser les bases essentielles pour concevoir et contrôler des systèmes robotiques complexes."
+               data-lang-en="During my engineering degree, I acquired advanced skills in robot kinematics, actuators, sensors, and linear and non-linear controls. These courses allowed me to master essential foundations for designing and controlling complex robotic systems.">
+                Au cours de mon diplôme d'ingénieur, j'ai acquis des compétences avancées en cinématique des robots, en actionneurs et capteurs, ainsi qu'en commandes linéaires et non-linéaires. Ces cours m'ont permis de maîtriser les bases essentielles pour concevoir et contrôler des systèmes robotiques complexes.
+            </p>
+            <p class="lang" data-lang-fr="J'ai également approfondi mes connaissances en outils d'analyse, calcul matriciel et scientifique, et statistiques. Ces compétences m'ont été précieuses pour résoudre des problématiques complexes et pour analyser des données avec rigueur."
+               data-lang-en="I also deepened my knowledge of analytical tools, matrix and scientific computation, and statistics. These skills have been invaluable for solving complex problems and analyzing data with precision.">
+                J'ai également approfondi mes connaissances en outils d'analyse, calcul matriciel et scientifique, et statistiques. Ces compétences m'ont été précieuses pour résoudre des problématiques complexes et pour analyser des données avec rigueur.
+            </p>
+            <p class="lang" data-lang-fr="En programmation, j'ai appris à utiliser divers langages tels que Python, C, C++, C#, Java, MATLAB et Simulink, ainsi que des bases de données MySQL. J'ai appliqué ces compétences pour développer des systèmes intelligents et résoudre des défis en robotique et en intelligence artificielle."
+               data-lang-en="In programming, I learned to use various languages such as Python, C, C++, C#, Java, MATLAB, and Simulink, as well as MySQL databases. I applied these skills to develop intelligent systems and tackle challenges in robotics and artificial intelligence.">
+                En programmation, j'ai appris à utiliser divers langages tels que Python, C, C++, C#, Java, MATLAB et Simulink, ainsi que des bases de données MySQL. J'ai appliqué ces compétences pour développer des systèmes intelligents et résoudre des défis en robotique et en intelligence artificielle.
+            </p>
+            <p class="lang" data-lang-fr="J'ai également travaillé avec des outils de conception assistée par ordinateur tels que Catia et Solidworks pour créer des prototypes et modéliser des solutions robotiques. Parallèlement, ma formation comprenait des cours en gestion de projet, comptabilité et audits, ce qui m'a permis de développer une vision globale des projets techniques."
+               data-lang-en="I also worked with computer-aided design tools such as Catia and Solidworks to create prototypes and model robotic solutions. Simultaneously, my training included project management, accounting, and audit courses, which allowed me to develop a comprehensive view of technical projects.">
+                J'ai également travaillé avec des outils de conception assistée par ordinateur tels que Catia et Solidworks pour créer des prototypes et modéliser des solutions robotiques. Parallèlement, ma formation comprenait des cours en gestion de projet, comptabilité et audits, ce qui m'a permis de développer une vision globale des projets techniques.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="boxed education-section">
+    <h2 class="lang text-center" data-lang-fr="Mes compétences techniques" data-lang-en="My technical skills">
+        Mes compétences techniques
+    </h2>
+
+    <div class="flexw gap20 tocolumn align-center ">
+
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/python.jpeg" class="detoure-image" alt="Python">
+            <h3>Python</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/c.jpeg" class="detoure-image" alt="C">
+            <h3>C</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/cpp.jpeg" class="detoure-image" alt="C++">
+            <h3>C++</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/java.jpeg" class="detoure-image" alt="Java">
+            <h3>Java</h3>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/tf.jpeg" class="detoure-image" alt="TensorFlow">
+            <h3>TensorFlow</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/pytorch.jpeg" class="detoure-image" alt="PyTorch">
+            <h3>PyTorch</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/gym.jpeg" class="detoure-image" alt="OpenAI Gym">
+            <h3>OpenAI Gym</h3>
+        </div>
+
+        <!-- Librairies -->
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/numpy.jpeg" class="detoure-image" alt="NumPy">
+            <h3>NumPy</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/pandas.jpeg" class="detoure-image" alt="Pandas">
+            <h3>Pandas</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/opencv.jpeg" class="detoure-image" alt="OpenCV">
+            <h3>OpenCV</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/sk.jpeg" class="detoure-image" alt="Scikit-learn">
+            <h3>Scikit-learn</h3>
+        </div>
+
+        <!-- Outils -->
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/git.jpeg" class="detoure-image" alt="Git">
+            <h3>Git</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about ">
+            <img src="img/docker.jpeg" class="detoure-image" alt="Docker">
+            <h3>Docker</h3>
+        </div>
+        <div class="w25 wm100 skills_violet_about">
+            <img src="img/ros.jpeg" class="detoure-image" alt="ROS">
+            <h3>ROS Humble</h3>
+        </div>
+    </div>
+    </div>
+
+    <!-- Expériences professionnelles -->
+    <div class="boxed education-section">
+        <h2 class="lang text-center"
+            data-lang-fr="Expériences Professionnelles"
+            data-lang-en="Professional Experiences">Expériences Professionnelles</h2>
+
+        <div class="education-content">
+
+            <div class="education-content">
+                <h3 class="lang" data-lang-fr="Assistant ingénieur à ETS Montréal" data-lang-en="Engineering Assistant at ETS Montreal">
+                    Assistant ingénieur à ETS Montréal
+                </h3>
+                <p class="lang" data-lang-fr="<em>Montreal, Quebec, Canada</em> - Avril 2024 - Août 2024"
+                   data-lang-en="<em>Montreal, Quebec, Canada</em> - April 2024 - August 2024">
+                    Montreal, Quebec, Canada - Avril 2024 - Août 2024
+                </p>
+                <p class="lang" data-lang-fr="Pendant mon stage au laboratoire CoRo de l'École de Technologie Supérieure (ETS), j'ai contribué à l'implémentation du framework cuRobo sur un robot collaboratif Doosan M1013. Ce projet m'a permis de générer des trajectoires optimisées et sécurisées pour des applications en environnement réel, tout en exploitant la puissance de calcul des GPU via CUDA."
+                   data-lang-en="During my internship at the CoRo Laboratory of École de Technologie Supérieure (ETS), I contributed to implementing the cuRobo framework on a collaborative Doosan M1013 robot. This project allowed me to generate optimized and secure trajectories for real-world applications while leveraging GPU computing power through CUDA.">
+                    Pendant mon stage au laboratoire CoRo de l'École de Technologie Supérieure (ETS), j'ai contribué à l'implémentation du framework cuRobo sur un robot collaboratif Doosan M1013. Ce projet m'a permis de générer des trajectoires optimisées et sécurisées pour des applications en environnement réel, tout en exploitant la puissance de calcul des GPU via CUDA.
+                </p>
+                <p class="lang" data-lang-fr="J'ai réalisé des simulations avancées avec Isaac-Sim pour valider les trajectoires, avant de les appliquer sur le robot physique. La gestion des nœuds et la communication entre composants ont été assurées grâce à l'utilisation des environnements ROS Noetic et ROS2 Humble, me permettant de structurer efficacement le pipeline de contrôle du robot."
+                   data-lang-en="I conducted advanced simulations with Isaac-Sim to validate trajectories before applying them to the physical robot. Node management and component communication were handled using ROS Noetic and ROS2 Humble, allowing me to efficiently structure the robot's control pipeline.">
+                    J'ai réalisé des simulations avancées avec Isaac-Sim pour valider les trajectoires, avant de les appliquer sur le robot physique. La gestion des nœuds et la communication entre composants ont été assurées grâce à l'utilisation des environnements ROS Noetic et ROS2 Humble, me permettant de structurer efficacement le pipeline de contrôle du robot.
+                </p>
+                <p class="lang" data-lang-fr="Le déploiement d'un environnement reproductible et sécurisé sur Ubuntu 22.04 a été réalisé à l'aide de conteneurs Docker. En parallèle, j'ai développé un pipeline complet allant de la simulation à l'application réelle, intégrant la gestion des obstacles en temps réel grâce à Nvidia Nvblox et à la caméra Intel RealSense."
+                   data-lang-en="The deployment of a reproducible and secure environment on Ubuntu 22.04 was achieved using Docker containers. Additionally, I developed a complete pipeline from simulation to real-world application, integrating real-time obstacle management using Nvidia Nvblox and the Intel RealSense camera.">
+                    Le déploiement d'un environnement reproductible et sécurisé sur Ubuntu 22.04 a été réalisé à l'aide de conteneurs Docker. En parallèle, j'ai développé un pipeline complet allant de la simulation à l'application réelle, intégrant la gestion des obstacles en temps réel grâce à Nvidia Nvblox et à la caméra Intel RealSense.
+                </p>
+                <p class="lang" data-lang-fr="Cette expérience m'a permis de renforcer mes compétences en programmation avancée avec Python pour le contrôle des trajectoires, ainsi qu'en simulation et visualisation avec des outils comme Isaac-Sim et Rviz2. J'ai également acquis une maîtrise des environnements ROS et des technologies de conteneurisation comme Docker, nécessaires pour les déploiements reproductibles."
+                   data-lang-en="This experience allowed me to strengthen my skills in advanced Python programming for trajectory control, as well as in simulation and visualization using tools like Isaac-Sim and Rviz2. I also gained mastery of ROS environments and containerization technologies such as Docker, essential for reproducible deployments.">
+                    Cette expérience m'a permis de renforcer mes compétences en programmation avancée avec Python pour le contrôle des trajectoires, ainsi qu'en simulation et visualisation avec des outils comme Isaac-Sim et Rviz2. J'ai également acquis une maîtrise des environnements ROS et des technologies de conteneurisation comme Docker, nécessaires pour les déploiements reproductibles.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="education-content">
+            <h3 class="lang" data-lang-fr="Stage ouvrier chez YKK France" data-lang-en="Worker Internship at YKK France">
+                Stage ouvrier chez YKK France
+            </h3>
+            <p class="lang" data-lang-fr="<em>Seclin, France - Juin 2023 à Juillet 2023<em>" data-lang-en="<em>Seclin, France - June 2023 to July 2023<em>">
+                Seclin, France - Juin 2023 à Juillet 2023
+            </p>
+            <p class="lang" data-lang-fr="Au sein de YKK France, leader mondial de la fabrication de fermetures à glissière, j'ai occupé un poste d'ouvrier au secteur 'sur mesure'. Cette expérience m'a permis d'acquérir des compétences variées et de comprendre les exigences du secteur du luxe."
+               data-lang-en="At YKK France, the world leader in zipper manufacturing, I worked as an operator in the 'custom-made' sector. This experience allowed me to acquire diverse skills and understand the demands of the luxury sector.">
+                Au sein de YKK France, leader mondial de la fabrication de fermetures à glissière, j'ai occupé un poste d'ouvrier au secteur 'sur mesure'. Cette expérience m'a permis d'acquérir des compétences variées et de comprendre les exigences du secteur du luxe.
+            </p>
+            <p class="lang" data-lang-fr="J'ai travaillé sur des tâches de production, comme la découpe précise de fermetures, où la rigueur était essentielle pour répondre aux standards des marques prestigieuses telles que Louis Vuitton et Dior."
+               data-lang-en="I worked on production tasks, such as precise zipper cutting, where precision was essential to meet the standards of prestigious brands such as Louis Vuitton and Dior.">
+                J'ai travaillé sur des tâches de production, comme la découpe précise de fermetures, où la rigueur était essentielle pour répondre aux standards des marques prestigieuses telles que Louis Vuitton et Dior.
+            </p>
+            <p class="lang" data-lang-fr="J'ai également participé à la gestion des stocks, contribuant à la transition vers un système de stockage plus moderne et efficace, et effectué la maintenance des robots automatisés pour améliorer les processus logistiques."
+               data-lang-en="I also participated in inventory management, contributing to the transition to a more modern and efficient storage system, and performed maintenance on automated robots to improve logistical processes.">
+                J'ai également participé à la gestion des stocks, contribuant à la transition vers un système de stockage plus moderne et efficace, et effectué la maintenance des robots automatisés pour améliorer les processus logistiques.
+            </p>
+            <p class="lang" data-lang-fr="Cette expérience m'a appris à être autonome, précis et organisé, tout en développant ma compréhension des processus industriels et des défis liés à l'innovation dans un marché exigeant."
+               data-lang-en="This experience taught me to be autonomous, precise, and organized, while developing my understanding of industrial processes and the challenges of innovation in a demanding market.">
+                Cette expérience m'a appris à être autonome, précis et organisé, tout en développant ma compréhension des processus industriels et des défis liés à l'innovation dans un marché exigeant.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="boxed cv-section">
+        <h2 class="lang text-center"
+            data-lang-fr="Mon CV"
+            data-lang-en="My Resume">Mon CV</h2>
+
+        <!-- Texte pour voir et télécharger le CV -->
+        <p class="lang"
+           data-lang-fr="Mon CV est disponible ci-dessous :"
+           data-lang-en="My resume is available below:">Mon CV est disponible ci-dessous :</p>
+
+        <!-- Intégration du CV en iframe -->
+        <iframe src="docs/CarpentierLucasCV.pdf"
+                width="100%" height="1200px"
+                style="border:none;"></iframe>
+
+        <!-- Texte pour le téléchargement -->
+        <p class="lang"
+           data-lang-fr="Vous pouvez également le télécharger en cliquant sur ce bouton :"
+           data-lang-en="You can also download it by clicking on this button:">
+            Vous pouvez également le télécharger en cliquant sur ce bouton :
+        </p>
+
+        <!-- Bouton Télécharger -->
+        <a href="docs/CarpentierLucasCV.pdf"
+           download
+           class="btn-cv lang"
+           data-lang-fr="Télécharger mon CV"
+           data-lang-en="Download My Resume">
+            Télécharger mon CV
+        </a>
+    </div>
+
+
+
+
+</div>
+
+<div class="copyright text-center">
+    <p class="lang" data-lang-fr="&copy; 2024 Lucas Carpentier. Tous droits réservés."
+       data-lang-en="&copy; 2024 Lucas Carpentier. All rights reserved.">
+        &copy; 2024 Lucas Carpentier. Tous droits réservés.
+    </p>
+</div>
+
+<script src="javascript/app.js"></script>
+</body>
+</html>

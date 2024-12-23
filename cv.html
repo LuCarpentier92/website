@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Curriculum Vitae - Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+<body>
+<header>
+    <div class="boxed">
+        <div class="flex align-center space-between">
+            <!-- Bouton mobile -->
+            <button onclick="openMenu()" class="header-menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Menu principal à gauche -->
+            <ul class="header-menu">
+                <li><a href="index.html" class="lang" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="lang" data-lang-fr="À-propos" data-lang-en="About">À-propos</a></li>
+                <li><a href="projects.html" class="lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</a></li>
+                <li><a href="contact.html" class="lang" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+
+            <!-- Boutons de langue à droite -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('fr')">FR</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section dark">
+    <div class="boxed text-center">
+        <h1>Curriculum Vitae</h1>
+        <p>Mon CV est disponible ci-dessous :</p>
+        <iframe src="CarpentierLucasCV.pdf" width="100%" height="600px" style="border:none;"></iframe>
+        <p>Vous pouvez également le télécharger en cliquant sur ce bouton:</p>
+        <a href="CarpentierLucasCV.pdf" download class="btn-cv">Télécharger mon CV</a>
+    </div>
+</div>
+
+<script src="/javascript/app.js"></script>
+</body>
+</html>

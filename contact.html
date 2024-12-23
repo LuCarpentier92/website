@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title class="lang" data-lang-fr="Contact - Mon Portfolio" data-lang-en="Contact - My Portfolio">Contact - Mon Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+<body>
+<header>
+    <div class="boxed">
+        <div class="flex align-center space-between">
+            <!-- Bouton mobile -->
+            <button onclick="openMenu()" class="header-menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Menu principal à gauche -->
+            <ul class="header-menu">
+                <li><a href="index.html" class="lang" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="lang" data-lang-fr="À-propos" data-lang-en="About">À-propos</a></li>
+                <li><a href="projects.html" class="lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</a></li>
+                <li><a href="contact.html" class="lang" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+
+            <!-- Boutons de langue à droite -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('fr')">FR</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="section light">
+    <div class="boxed text-center">
+        <p class="lang" data-lang-fr="Contactez-moi !" data-lang-en="Contact Me!">Contactez-moi !</p>
+        <p class="lang" data-lang-fr="Si vous êtes intéressé par mon profil ou si vous souhaitez discuter de collaborations potentielles, n'hésitez pas à me contacter."
+           data-lang-en="If you are interested in my profile or wish to discuss potential collaborations, feel free to reach out.">
+            Si vous êtes intéressé par mon profil ou si vous souhaitez discuter de collaborations potentielles, n'hésitez pas à me contacter.
+        </p>
+
+        <!-- Formulaire de contact.php -->
+        <form action="/php/contact.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name" class="lang" data-lang-fr="Votre nom :" data-lang-en="Your name:">Votre nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="lang" data-lang-fr="Votre email :" data-lang-en="Your email:">Votre email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="lang" data-lang-fr="Votre message :" data-lang-en="Your message:">Votre message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit lang" data-lang-fr="Envoyer" data-lang-en="Send">Envoyer</button>
+        </form>
+
+    </div>
+</div>
+
+<div class="section light">
+    <div class="boxed-margin text-center">
+        <div class="flex tocolumn space-between mgap20">
+            <!-- E-mail Contact -->
+            <div class="w32 wm100 contact">
+                <span class="material-icons icon">mail</span>
+                <span class="label"></span>
+                <a href="mailto:lucas.carpentier92014@gmail.com" class="value">lucas.carpentier92014@gmail.com</a>
+            </div>
+
+            <!-- LinkedIn Contact -->
+            <div class="w32 wm100 contact">
+                <img src="img/linkedin.jpeg" alt="Logo LinkedIn" class="special-icon">
+                <a href="https://www.linkedin.com/in/lucascarpentier" target="_blank" class="value lang"
+                   data-lang-fr="Lucas Carpentier" data-lang-en="Lucas Carpentier">
+                    Lucas Carpentier
+                </a>
+            </div>
+
+            <!-- GitHub Contact -->
+            <div class="w32 wm100 contact">
+                <span class="github label">GitHub</span>
+                <a href="https://github.com/LuCarpentier92" target="_blank" class="value lang"
+                   data-lang-fr="LuCarpentier92" data-lang-en="LuCarpentier92">
+                    LuCarpentier92
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright text-center">
+        <p class="lang" data-lang-fr="&copy; 2024 Lucas Carpentier. Tous droits réservés." data-lang-en="&copy; 2024 Lucas Carpentier. All rights reserved.">
+            &copy; 2024 Lucas Carpentier. Tous droits réservés.
+        </p>
+    </div>
+</div>
+
+
+
+<script src="javascript/app.js"></script>
+</body>
+</html>

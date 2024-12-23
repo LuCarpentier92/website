@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Mon portfolio</title>
+    <meta type="description" content="Ceci est mon portfolio">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="boxed">
+        <div class="flex align-center space-between">
+            <!-- Bouton mobile -->
+            <button onclick="openMenu()" class="header-menu-mobile">
+                <span class="material-icons">menu</span>
+            </button>
+
+            <!-- Menu principal à gauche -->
+            <ul class="header-menu">
+                <li><a href="index.html" class="lang" data-lang-fr="Accueil" data-lang-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="lang" data-lang-fr="À-propos" data-lang-en="About">À-propos</a></li>
+                <li><a href="projects.html" class="lang" data-lang-fr="Projets" data-lang-en="Projects">Projets</a></li>
+                <li><a href="contact.html" class="lang" data-lang-fr="Contact" data-lang-en="Contact">Contact</a></li>
+            </ul>
+
+            <!-- Boutons de langue à droite -->
+            <div class="lang-switcher">
+                <button onclick="changeLanguage('fr')">FR</button>
+                <button onclick="changeLanguage('en')">EN</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div class="section light">
+    <div class="boxed presentation-box">
+        <div class="flex align-center">
+            <!-- Photo de Lucas -->
+            <div class="w40 wm100 photo-container">
+                <img src="img/lucas.jpg" alt="Lucas Carpentier" class="profile-photo">
+            </div>
+
+            <div class="w60 wm100 text-container">
+                <h2 class="lang" data-lang-fr="À propos de moi" data-lang-en="About Me">À propos de moi</h2>
+                <p class="lang" data-lang-fr="Je suis Lucas Carpentier, étudiant en cinquième année à l'école d'ingénieur SeaTech Toulon, spécialisé en mécatronique, robotique et intelligence artificielle."
+                   data-lang-en="I am Lucas Carpentier, a fifth-year student at SeaTech Toulon engineering school, specializing in mechatronics, robotics, and artificial intelligence.">
+                    Je suis <strong>Lucas Carpentier</strong>, étudiant en cinquième année à l'école d'ingénieur <strong>SeaTech Toulon</strong>, spécialisé en <em>mécatronique</em>, <em>robotique</em> et <em>intelligence artificielle</em>.
+                </p>
+                <p class="lang" data-lang-fr="Passionné par la technologie et l'innovation, j'ai développé des compétences en développement logiciel, programmation et contrôle de systèmes robotiques."
+                   data-lang-en="Passionate about technology and innovation, I have developed skills in software development, programming, and control of robotic systems.">
+                    Passionné par la technologie et l'innovation, j'ai développé des compétences en développement logiciel, programmation et contrôle de systèmes robotiques.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="section dark">
+
+        <div class="boxed text-center">
+
+            <h2 class="lang" data-lang-fr="Découvrez mes langages de programmation préférés :" data-lang-en="Discover My Favorite Programming Languages:">Découvrez mes langages de programmation préférés :</h2>
+            <div class="flexw gap20 tocolumn">
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/python.jpeg" class="detoure-image">
+                    <h3>Python 3</h3>
+
+                </div>
+
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/cpp.jpeg" class="detoure-image">
+                    <h3>C++</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/java.jpeg" class="detoure-image">
+                    <h3>Java</h3>
+
+                </div>
+
+            </div>
+
+            <h2 class="lang" data-lang-fr="Les outils que j'utilise le plus :" data-lang-en="Tools I use the more often :">Les outils que j'utilise le plus :</h2>
+
+            <h2> </h2>
+            <div class="flexw gap20 tocolumn">
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/tf.jpeg" class="detoure-image">
+                    <h3>Tensorflow</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/ros.jpeg" class="detoure-image">
+                    <h3>ROS2 Humble</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/keras.jpeg" class="detoure-image">
+                    <h3>Kéras</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/numpy.jpeg" class="detoure-image">
+                    <h3>Numpy</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/pandas.jpeg" class="detoure-image">
+                    <h3>Pandas</h3>
+
+                </div>
+                <div class="w25 wm100 skills_violet">
+                    <img src="img/sk.jpeg" class="detoure-image">
+                    <h3>Scikit-Learn</h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="section light">
+    <div class="boxed text-center-books">
+        <h2 class="lang" data-lang-fr="Quelques livres que j'ai trouvé intéressants ..."
+            data-lang-en="Some books I found interesting ...">
+            Quelques livres que j'ai trouvé intéressants ...
+        </h2>
+        <div class="books-container">
+            <!-- Livre 1 -->
+            <div class="book-card">
+                <img src="img/geopo.jpeg" alt="Géopolitique des Amériques" class="book-image">
+                <h3 class="lang" data-lang-fr="Géopolitique des Amériques"
+                    data-lang-en="Geopolitics of the Americas">
+                    Géopolitique des Amériques
+                </h3>
+                <p class="lang" data-lang-fr="Ce livre explore les enjeux géopolitiques et les transformations majeures en Amérique du Nord, Centrale et du Sud. Une ressource essentielle pour comprendre les dynamiques politiques et économiques globales."
+                   data-lang-en="This book explores geopolitical issues and major transformations in North, Central, and South America. An essential resource for understanding global political and economic dynamics.">
+                    Ce livre explore les enjeux géopolitiques et les transformations majeures en Amérique du Nord, Centrale et du Sud. Une ressource essentielle pour comprendre les dynamiques politiques et économiques globales.
+                </p>
+            </div>
+
+            <!-- Livre 2 -->
+            <div class="book-card">
+                <img src="img/dl.jpeg" alt="Deep Learning avec Keras et TensorFlow" class="book-image">
+                <h3 class="lang" data-lang-fr="Deep Learning avec Keras et TensorFlow"
+                    data-lang-en="Deep Learning with Keras and TensorFlow">
+                    Deep Learning avec Keras et TensorFlow
+                </h3>
+                <p class="lang" data-lang-fr="Un guide pratique pour découvrir et maîtriser le deep learning à travers des exemples concrets et des outils comme Keras et TensorFlow. Idéal pour approfondir mes connaissances en intelligence artificielle."
+                   data-lang-en="A practical guide to discovering and mastering deep learning through concrete examples and tools like Keras and TensorFlow. Ideal for enhancing my knowledge of artificial intelligence.">
+                    Un guide pratique pour découvrir et maîtriser le deep learning à travers des exemples concrets et des outils comme Keras et TensorFlow. Idéal pour approfondir mes connaissances en intelligence artificielle.
+                </p>
+            </div>
+
+            <!-- Livre 3 -->
+            <div class="book-card">
+                <img src="img/ml.jpeg" alt="Machine Learning avec Scikit-Learn" class="book-image">
+                <h3 class="lang" data-lang-fr="Machine Learning avec Scikit-Learn"
+                    data-lang-en="Machine Learning with Scikit-Learn">
+                    Machine Learning avec Scikit-Learn
+                </h3>
+                <p class="lang" data-lang-fr="Ce livre offre une introduction détaillée au machine learning avec des cas concrets en utilisant Scikit-Learn. Parfait pour perfectionner mes compétences en science des données."
+                   data-lang-en="This book provides a detailed introduction to machine learning with practical cases using Scikit-Learn. Perfect for refining my skills in data science.">
+                    Ce livre offre une introduction détaillée au machine learning avec des cas concrets en utilisant Scikit-Learn. Parfait pour perfectionner mes compétences en science des données.
+                </p>
+            </div>
+
+            <!-- Livre 4 -->
+            <div class="book-card">
+                <img src="img/chat.jpeg" alt="Donnerons-nous notre langue au ChatGPT ?" class="book-image">
+                <h3 class="lang" data-lang-fr="Donnerons-nous notre langue au ChatGPT ?"
+                    data-lang-en="Will we give our language to ChatGPT?">
+                    Donnerons-nous notre langue au ChatGPT ?
+                </h3>
+                <p class="lang" data-lang-fr="Une réflexion sur l'impact de l'intelligence artificielle dans notre société, abordant les implications éthiques, sociales et culturelles des technologies comme ChatGPT."
+                   data-lang-en="A reflection on the impact of artificial intelligence in our society, addressing the ethical, social, and cultural implications of technologies like ChatGPT.">
+                    Une réflexion sur l'impact de l'intelligence artificielle dans notre société, abordant les implications éthiques, sociales et culturelles des technologies comme ChatGPT.
+                </p>
+            </div>
+
+            <!-- Livre 5 -->
+            <div class="book-card">
+                <img src="img/pract.jpeg" alt="Practical Statistics for Data Scientists">
+                <h3 class="lang" data-lang-fr="Practical Statistics for Data Scientists"
+                    data-lang-en="Practical Statistics for Data Scientists">
+                    Practical Statistics for Data Scientists
+                </h3>
+                <p class="lang" data-lang-fr="Un guide pratique pour comprendre et appliquer les concepts clés des statistiques à l'aide de R et Python. Parfait pour améliorer mes compétences en science des données et en analyse statistique."
+                   data-lang-en="A practical guide to understanding and applying key statistical concepts using R and Python. Perfect for enhancing my skills in data science and statistical analysis.">
+                    Un guide pratique pour comprendre et appliquer les concepts clés des statistiques à l'aide de R et Python. Parfait pour améliorer mes compétences en science des données et en analyse statistique.
+                </p>
+            </div>
+
+            <!-- Livre 6 -->
+            <div class="book-card">
+                <img src="img/chernobyl.jpeg" alt="Chernobyl Prayer: A Chronicle of the Future">
+                <h3 class="lang" data-lang-fr="Chernobyl Prayer: A Chronicle of the Future"
+                    data-lang-en="Chernobyl Prayer: A Chronicle of the Future">
+                    Chernobyl Prayer: A Chronicle of the Future
+                </h3>
+                <p class="lang" data-lang-fr="Une chronique poignante racontant les histoires des survivants de la catastrophe de Tchernobyl. Ce livre explore l'impact humain et social d'un événement tragique."
+                   data-lang-en="A poignant chronicle recounting the stories of the survivors of the Chernobyl disaster. This book explores the human and social impact of a tragic event.">
+                    Une chronique poignante racontant les histoires des survivants de la catastrophe de Tchernobyl. Ce livre explore l'impact humain et social d'un événement tragique.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="section dark-footer">
+    <div class="boxed-margin text-center">
+        <h2 class="lang" data-lang-fr="Contactez-moi !" data-lang-en="Contact Me!">Contactez-moi !</h2>
+        <div class="flex tocolumn space-between mgap20">
+            <!-- E-mail Contact -->
+            <div class="w32 wm100 contact">
+                <span class="material-icons icon">mail</span>
+                <span class="label"></span>
+                <a href="mailto:lucas.carpentier92014@gmail.com" class="value">lucas.carpentier92014@gmail.com</a>
+            </div>
+
+            <!-- LinkedIn Contact -->
+            <div class="w32 wm100 contact">
+                <img src="img/linkedin.jpeg" alt="Logo LinkedIn" class="special-icon">
+                <a href="https://www.linkedin.com/in/lucascarpentier" target="_blank" class="value">Lucas Carpentier</a>
+                <span class="label"></span>
+            </div>
+
+            <!-- GitHub Contact -->
+            <div class="w32 wm100 contact">
+                <span class="github label">GitHub</span>
+                <a href="https://github.com/LuCarpentier92" target="_blank" class="value">LuCarpentier92</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright text-center">
+        <p class="lang" data-lang-fr="&copy; 2024 Lucas Carpentier. Tous droits réservés."
+           data-lang-en="&copy; 2024 Lucas Carpentier. All rights reserved.">
+            &copy; 2024 Lucas Carpentier. Tous droits réservés.
+        </p>
+    </div>
+</div>
+
+
+
+
+</body>
+
+<script src="javascript/app.js"></script>
+
+</html>
