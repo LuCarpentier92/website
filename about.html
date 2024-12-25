@@ -239,9 +239,9 @@
            data-lang-fr="Mon CV est disponible ci-dessous :"
            data-lang-en="My resume is available below:">Mon CV est disponible ci-dessous :</p>
 
-        <!-- Intégration du CV en iframe -->
-        <iframe src= "docs/CarpentierLucasCV.pdf"
-                target = "_blank"
+        <!-- Intégration dynamique du CV en iframe -->
+        <iframe id="cv-iframe"
+                src="docs/CarpentierLucasCV_fr.pdf"
                 width="100%" height="1200px"
                 style="border:none;"></iframe>
 
@@ -253,11 +253,9 @@
         </p>
 
         <!-- Bouton Télécharger -->
-        <a href= "docs/CarpentierLucasCV.pdf"
-           class="btn-cv lang"
-           target="_blank"
+        <a id="cv-download" href="docs/CarpentierLucasCV_fr.pdf" class="btn-cv lang"
            data-lang-fr="Télécharger mon CV"
-           data-lang-en="Download My Resume">
+           data-lang-en="Download My Resume" target="_blank">
             Télécharger mon CV
         </a>
     </div>
